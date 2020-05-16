@@ -1,0 +1,34 @@
+import java.applet.Applet;
+import java.awt.Graphics;
+/*<applet code="MyfirstApplet.class" width=500 height=500>
+</applet>
+*/
+
+public class MyfirstApplet extends Applet {
+    
+
+public void init()
+{
+System.out.println("Init");
+
+}
+public void start()
+{
+System.out.println("start");
+}
+public void stop()
+{
+System.out.println("stop");
+}
+        public void paint(Graphics g)
+    {
+        g.drawString("welcome", 100, 200);
+    }
+public void destroy()
+{
+System.out.println("destroy");
+}
+    
+}
+/*javac Myfirst.java
+appletvieweer Myfirst.java*/
