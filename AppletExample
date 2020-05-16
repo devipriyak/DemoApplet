@@ -1,0 +1,19 @@
+import java.applet.Applet;
+import java.awt.Graphics;
+
+public class AppletExample extends Applet {
+    
+    public void paint(Graphics g)
+    {
+       // System.out.println("hello");
+        g.drawString("Welcome", 50, 50);
+        g.drawRect(70,70, 150, 150);
+        g.drawLine(45, 67, 78, 100);
+        g.drawRoundRect(56, 79, 456, 478, 90, 90);
+        g.fillOval(10,10,234,89);
+        
+        
+    }
+    
+       
+}
