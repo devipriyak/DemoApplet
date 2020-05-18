@@ -1,0 +1,26 @@
+/*<applet code="DisplayImage" width=500 height=500>
+</applet>*/
+
+import java.awt.*;
+import java.applet.*;
+public class DisplayImage extends Applet {
+
+String msg="";
+Image img;        //refernce of Image Class
+
+public void init() {
+img=getImage(getDocumentBase(),"bike.jpg");
+
+}
+//draw Image
+public void paint(Graphics g) {
+//g.drawImage(img, 30,30, this);
+
+
+for(int i=0;i<500;i++){  
+      g.drawImage(img, i,30, this);  
+  
+      try{Thread.sleep(100);}catch(Exception e){}  
+    }  
+}
+}
